@@ -5,10 +5,6 @@ require_relative '../app.rb'
 class Editora < ActiveRecord::Base
 end
 
-get('/consulta/editoras'){
-  result = Editora.all.as_json
-  halt(200, result.to_json)
-}
 
 Editora.create(
   [
@@ -17,3 +13,9 @@ Editora.create(
     {:nome => 'Rocco'}
   ]
 )
+
+get('/consulta/editoras'){
+  result = Editora.all.as_json
+  halt(200, result.to_json)
+}
+
