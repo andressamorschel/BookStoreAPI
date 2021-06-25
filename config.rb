@@ -1,6 +1,4 @@
 require 'sinatra'
-require 'sinatra/contrib'
-require 'sinatra/reloader'
 require 'active_record'
 
 ActiveRecord::Base.establish_connection(

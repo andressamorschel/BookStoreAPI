@@ -1,18 +1,9 @@
 require 'sinatra'
 require 'active_record'
-require_relative '../app.rb'
+require_relative '../config.rb'
 
 class Autore < ActiveRecord::Base
+  has_and_belongs_to_many :livros
 end
 
-get('/consulta/autores'){
-  result = Autore.all.as_json
-  halt(200, result.to_json)
-}
 
-Autore.create (
-  [
-    {:nome => 'Andressa', :data_nascimento => '2003-03-06'},
-    {:nome => 'Autor1', :data_nascimento => '1980-11-09'}
-  ]
-)

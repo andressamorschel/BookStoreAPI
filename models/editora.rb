@@ -1,21 +1,8 @@
 require 'sinatra'
 require 'active_record'
-require_relative '../app.rb'
+require_relative '../config.rb'
 
 class Editora < ActiveRecord::Base
+  has_many :livros
 end
-
-
-Editora.create(
-  [
-    {:nome => 'Campanhia das letras'},
-    {:nome => 'Aleph'},
-    {:nome => 'Rocco'}
-  ]
-)
-
-get('/consulta/editoras'){
-  result = Editora.all.as_json
-  halt(200, result.to_json)
-}
 
