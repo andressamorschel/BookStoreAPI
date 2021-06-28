@@ -5,7 +5,7 @@ get('/consulta/usarios'){
   halt(200, result.to_json)
 }
 
-get '/registrar/usuario/nome=:name' do |n|
+post '/registrar/usuario/nome=:name' do |n|
   Usuario.create(
     [
       {:nome => n}
@@ -14,7 +14,7 @@ get '/registrar/usuario/nome=:name' do |n|
   "Usuario criado"
 end
 
-get '/excluir/usuario/id=:n' do |n|
+delete '/excluir/usuario/id=:n' do |n|
   Usuario.destroy_by(id: n)
   "Usuário excluido"
 end

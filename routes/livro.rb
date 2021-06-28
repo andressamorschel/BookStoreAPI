@@ -4,7 +4,7 @@ def criar_registros
   Livro.create(
     [
       {:nome => 'Arquitetura Limpa',:publicado => 0, :id_editora => 7, :id_autor => 10},
-      {:nome => 'Admirável Mundo Novo', :publicado => 0, :id_editora => 2, :id_autor => 5}
+      {:nome => 'TesteDelete', :publicado => 0, :id_editora => 0, :id_autor => 0}
     ]
   )
 end
@@ -39,7 +39,11 @@ get('/livros/publicados'){
   halt(200, result.to_json)
 }
 
-get '/hello/:name' do |n|
-  "Hello #{n}!"
-end
+delete '/excluir/livro/id=:id' do |n|
+  Livro.destroy_by(id: n)
+  "Livro excluido"
+end 
 
+get('/consulta-livros-autores'){
+  Livro.joins(:Autore).where('nome=Andressa').where('id= 12')
+}
