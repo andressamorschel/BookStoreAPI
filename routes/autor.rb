@@ -15,5 +15,7 @@ get('/consulta/autores'){
 delete '/excluir/autor/id=:id' do |n|
   Autore.destroy_by(id: n)
   "Autor excluido"
+  rescue Exception => e
+  halt(500, {error: e.message}.to_json)
 end
 

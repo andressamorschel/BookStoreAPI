@@ -4,5 +4,8 @@ require_relative '../config.rb'
 
 class Livro < ActiveRecord::Base
   has_and_belongs_to_many :autores
-  validates :nome, :publicado, :id_editora, :id_autor, presence: true
+  validates_associated :nome, presence: true, length: { in: 2..15 }
+  validates_associated :publicado, presence: true
+  validates_associated :id_editora, presence: true
+  validates_associated :id_autor, presence: true
 end

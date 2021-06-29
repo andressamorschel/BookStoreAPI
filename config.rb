@@ -9,3 +9,4 @@ ActiveRecord::Base.establish_connection(
  :database => "livraria"
 );
 
+set :database, {adapter: "mysql2", database: "livraria"}

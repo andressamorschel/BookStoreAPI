@@ -4,5 +4,5 @@ require_relative '../config.rb'
 
 class Usuario < ActiveRecord::Base
   has_many :livros
-  validates :nome, presence: true
+  validates :nome, :aniversario, presence: true, uniqueness: true
 end
