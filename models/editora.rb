@@ -4,5 +4,6 @@ require_relative '../config.rb'
 
 class Editora < ActiveRecord::Base
   has_many :livros
+  validates :nome, presence: true
 end
 

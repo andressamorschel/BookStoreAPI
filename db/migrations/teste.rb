@@ -1,13 +1,15 @@
+require 'active_record'
 
-class CreateProducts < ActiveRecord::Migration[6.0]
+class Teste < ActiveRecord::Migration[6.0]
   def change
-    create_table :products do |t|
-      t.string :name
-      t.string :part_number
+    create_table :teste_tabela do |t|
+      t.string :nome
+      t.float :valor
 
       t.timestamps
     end
   end
 end
-teste = CreateProducts.new
-teste.change
+
+# teste2 = Teste.new
+# teste2.change
