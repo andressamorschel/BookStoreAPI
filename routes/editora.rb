@@ -13,3 +13,7 @@ get('/consulta/editoras') {
   halt(200, result.to_json)
 }
 
+delete '/excluir/editora/id=:id' do |n|
+  Editora.destroy_by(id: n)
+  "Editora Excluida"
+end  

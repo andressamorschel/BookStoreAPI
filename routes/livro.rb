@@ -43,7 +43,3 @@ delete '/excluir/livro/id=:id' do |n|
   Livro.destroy_by(id: n)
   "Livro excluido"
 end 
-
-get('/consulta-livros-autores'){
-  Livro.joins(:Autore).where('nome=Andressa').where('id= 12')
-}
