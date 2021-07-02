@@ -1,0 +1,13 @@
+  development:
+  host: tuffi.db.elephantsql.com
+  adapter: postgresql
+  database: qqbthwuy
+  username: qqbthwuy
+  password: 3loupSqc36p8otLqzVSmYwghAUmHxJWl
+
+test:
+  host: motty.db.elephantsql.com
+  adapter: postgresql
+  database: qqbthwuy
+  username: qqbthwuy
+  password: 3loupSqc36p8otLqzVSmYwghAUmHxJWl

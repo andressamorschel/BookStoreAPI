@@ -2,11 +2,11 @@ require 'sinatra'
 require 'active_record'
 
 ActiveRecord::Base.establish_connection(
- :adapter  => "mysql2",
+ :adapter  => "sql3",
  :host     => "localhost",
- :username => "root",
+ :username => "sa",
  :password => "Andre55#",
  :database => "livraria"
 );
 
-set :database, {adapter: "mysql2", database: "livraria"}
+# set :database, {adapter: "mysql2", database: "livraria"}
