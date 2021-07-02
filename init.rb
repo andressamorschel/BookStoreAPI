@@ -1,8 +1,7 @@
-require 'pg'
-require 'sinatra/activerecord'
-require 'rake'
 require 'sinatra'
-require 'active_record'
+require 'sinatra/activerecord'
+require 'pg'
+require 'rake'
 
 #require_relative 'config.rb'
 require_relative 'models/autor.rb'
