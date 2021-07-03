@@ -17,3 +17,9 @@ delete '/excluir/editora/id=:id' do |n|
   Editora.destroy_by(id: n)
   "Editora Excluida"
 end  
+
+Editora.create(
+  [
+    {:nome => 'Testee'}
+  ]
+)
