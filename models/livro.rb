@@ -6,5 +6,5 @@ class Livro < ActiveRecord::Base
   validates :nome, presence: true, length: { in: 2..15 }
   validates :publicado, presence: true
   validates :id_editora, presence: true
-  validates :id_autor, presence: true
+  scope :publicado , -> { where(publicado: true) }
 end
