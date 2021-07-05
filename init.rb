@@ -3,7 +3,6 @@ require 'sinatra/activerecord'
 require 'pg'
 require 'rake'
 
-#require_relative 'config.rb'
 require_relative 'models/autor.rb'
 require_relative 'models/livro.rb'
 require_relative 'models/editora.rb'

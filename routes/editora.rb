@@ -18,8 +18,8 @@ delete '/excluir/editora/id=:id' do |n|
   "Editora Excluida"
 end  
 
-Editora.create(
-  [
-    {:nome => 'Testee'}
-  ]
-)
+# Editora.create(
+#   [
+#     {:nome => 'Testee'}
+#   ]
+# )

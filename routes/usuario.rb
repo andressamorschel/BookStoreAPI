@@ -19,4 +19,3 @@ delete '/excluir/usuario/id=:n' do |n|
   rescue Exception => e
   halt(500, {error: e.message}.to_json)
 end
-

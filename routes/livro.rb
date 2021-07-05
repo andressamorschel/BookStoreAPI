@@ -26,3 +26,5 @@ delete '/excluir/livro/id=:id' do |n|
   rescue Exception => e
   halt(500, {error: e.message}.to_json)
 end 
+
+#Livro.create(nome: "Teste livro", publicado: 1, editora_id: 1)
