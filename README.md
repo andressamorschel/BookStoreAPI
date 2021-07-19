@@ -8,7 +8,6 @@
 * PostgreSQL
 
 ## Projeto:
-<br>
 
 <p>
 API criada com Sinatra para consultas no banco de dados da livraria e manipulação de dados/tabelas via ActiveRecord. O SGBD utilizado foi o MYSQL(posteriormente houve uma migração para o PostgreSQL). 
