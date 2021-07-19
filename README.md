@@ -2,8 +2,9 @@
 
 ## Tecnologias:
 <br>
-* Ruby +
-* Sinatra +
+
+* Ruby
+* Sinatra 
 * MYSQL
 * PostgreSQL
 <br>
