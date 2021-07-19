@@ -1,13 +1,14 @@
 <h1>BookStoreAPI</h1>
 
-##Tecnologias:
+## Tecnologias:
 <br>
 * Ruby
 * Sinatra
 * MYSQL
 * PostgreSQL
 <br>
-##Projeto:
+
+## Projeto:
 <br>
 
 <p>
