@@ -23,6 +23,8 @@ GEM
     rack-protection (2.1.0)
       rack
     rake (13.0.3)
+    rexml (3.2.5)
+    rsec (1.0.0)
     ruby2_keywords (0.0.4)
     sinatra (2.1.0)
       mustermann (~> 1.0)
@@ -44,8 +46,10 @@ DEPENDENCIES
   activerecord (~> 6.1, >= 6.1.3.2)
   pg (~> 1.2, >= 1.2.3)
   rake (~> 13.0, >= 13.0.3)
+  rexml (~> 3.2, >= 3.2.5)
+  rsec (~> 1.0)
   sinatra (~> 2.1)
   sinatra-activerecord (~> 2.0, >= 2.0.23)
 
 BUNDLED WITH
-   2.2.20
+   2.2.23

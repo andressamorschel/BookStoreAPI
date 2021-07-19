@@ -1,6 +1,6 @@
 require_relative '../models/usuario.rb'
 
-get('/consulta/usuario'){
+get('/consulta/usuarios'){
   result = Usuario.all.as_json
   halt(200, result.to_json)
 }
