@@ -1,4 +1,4 @@
-<h1 align="center">BookStoreAPI</h1>
+<h1>BookStoreAPI</h1>
 
 ## Tecnologias:
 
