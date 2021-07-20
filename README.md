@@ -7,7 +7,7 @@
 * Sinatra 
 * MYSQL
 * PostgreSQL
-<br>
+
 
 ## Projeto:
 <br>

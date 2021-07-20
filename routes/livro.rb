@@ -6,7 +6,7 @@ get('/livros/nao-publicados'){
 }
 
 get '/livros/editora=:num' do |n|
-  result = Livro.where(id_editora: n)
+  result = Livro.where(editora_id: n)
   halt(200, result.to_json)
 end
 
