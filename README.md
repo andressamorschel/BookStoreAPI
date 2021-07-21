@@ -22,7 +22,6 @@ Este projeto é um desafio da empresa Real Seguro Viagem, link: https://www.segu
 
 - [x] Conexão com banco de dados
 - [x] Criar rotas para consultas
-- [x] Criar migrations para models
 - [x] Criar testes de models
 - [ ] Criar testes de rotas
 
